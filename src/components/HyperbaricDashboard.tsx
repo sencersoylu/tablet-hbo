@@ -4,10 +4,10 @@ import {
   Text,
   StyleSheet,
   Dimensions,
-  StatusBar,
-  SafeAreaView,
 } from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
+import { LinearGradient } from 'expo-linear-gradient';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { StatusBar } from 'expo-status-bar';
 
 interface SensorData {
   pressure: number; // ATA
@@ -117,7 +117,7 @@ const HyperbaricDashboard: React.FC = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="light-content" backgroundColor="#0f172a" />
+      <StatusBar style="light" backgroundColor="#0f172a" />
       <LinearGradient
         colors={['#0f172a', '#1e293b', '#334155']}
         style={styles.gradient}>

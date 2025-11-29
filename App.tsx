@@ -1,8 +1,11 @@
 import React from 'react';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import HyperbaricDashboard from './src/components/HyperbaricDashboard';
 
-function App(): React.JSX.Element {
-  return <HyperbaricDashboard />;
+export default function App() {
+  return (
+    <SafeAreaProvider>
+      <HyperbaricDashboard />
+    </SafeAreaProvider>
+  );
 }
-
-export default App;

@@ -1,6 +1,6 @@
 # Hiperbarik Kabin Dashboard
 
-React Native ile geliştirilmiş 1920x1080 çözünürlükte hiperbarik kabin kontrol paneli.
+Expo ile geliştirilmiş 1920x1080 çözünürlükte hiperbarik kabin kontrol paneli.
 
 ## Özellikler
 
@@ -13,6 +13,7 @@ Her sensör için:
 - Gerçek zamanlı değer gösterimi
 - Renk kodlu durum göstergesi (Normal/Uyarı/Kritik)
 - Otomatik güncelleme
+- Modern gradient tasarım
 
 ## Kurulum
 
@@ -20,29 +21,37 @@ Her sensör için:
 # Bağımlılıkları yükle
 npm install
 
-# iOS için
+# Expo development server başlat
+npm start
+
+# iOS için (iOS simulator gerekli)
 npm run ios
 
-# Android için
+# Android için (Android emulator veya fiziksel cihaz)
 npm run android
+
+# Web için
+npm run web
 ```
 
 ## Gereksinimler
 
 - Node.js >= 18
-- React Native CLI
-- iOS: Xcode 14+
-- Android: Android Studio
+- Expo CLI
+- iOS: Expo Go app veya iOS Simulator
+- Android: Expo Go app veya Android Emulator
 
 ## Çözünürlük
 
-Uygulama 1920x1080 tablet ekranı için optimize edilmiştir.
+Uygulama 1920x1080 tablet ekranı için optimize edilmiştir. Landscape (yatay) modda çalışır.
 
 ## Teknolojiler
 
+- Expo ~50.0
 - React Native 0.73
 - TypeScript
-- React Native Linear Gradient
+- Expo Linear Gradient
+- Expo Status Bar
 - React Hooks
 
 ## Sensör Sınırları

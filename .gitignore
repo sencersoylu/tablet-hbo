@@ -52,6 +52,11 @@ yarn-error.log
 # Temporary files created by Metro
 *.tmp.bundle
 
+# Expo
+.expo/
+.expo-shared/
+dist/
+
 # Misc
 .env
 .env.local

@@ -1,4 +1,33 @@
 {
-  "name": "tablet-hbo",
-  "displayName": "Hyperbaric Chamber Dashboard"
+  "expo": {
+    "name": "Hyperbaric Chamber Dashboard",
+    "slug": "tablet-hbo",
+    "version": "1.0.0",
+    "orientation": "landscape",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f172a"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tablethbo.hyperbaric"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0f172a"
+      },
+      "package": "com.tablethbo.hyperbaric",
+      "permissions": []
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
 }
